@@ -39,6 +39,30 @@
 
   /* nav height */
   --nav-height: 64px;
+
+  --spacing-s: 12px;
+  --spacing-xs: 9px;
+  --spacing-xxs: 6px;
+
+   /* Border-radius */
+   --input-border-radius: 4px;
+   --image-border-radius-m: 8px;
+   --image-border-radius-l: 16px;
+   --image-border-radius-xl: 24px;
+   --image-border-radius-xxl: 30px;
+   --card-border-radius-l: 12px;
+ 
+     /* Spacing (Consonant) */
+  --spacing-xxxs: 4px;
+  --spacing-xxs: 8px;
+  --spacing-xs: 16px;
+  --spacing-s: 24px;
+  --spacing-m: 32px;
+  --spacing-ml: 40px;
+  --spacing-l: 48px;
+  --spacing-xl: 56px;
+  --spacing-xxl: 80px;
+  --spacing-xxxl: 104px;
 }
 
 @font-face {
@@ -208,3 +232,4 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
 }
+
