@@ -17,6 +17,7 @@ main .hero-container {
   margin-left: auto;
   margin-right: auto;
   color: white;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.705);
 }
 
 .hero picture {
