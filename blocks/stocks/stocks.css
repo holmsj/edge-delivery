@@ -1,0 +1,28 @@
+.stocks ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.stocks li {
+  padding: var(--spacing-s);
+  margin: var(--spacing-xs);
+  border-radius: var(--card-border-radius-l);
+  filter: var(--image-filter-drop-shadow-small);
+  border: solid 1px var( --text-color);
+  
+}
+
+.stocks .stock-id {
+    font-weight: 800;
+}
+
+@media (width >= 600px) {
+    .stocks ul {
+        display: flex;
+    }
+
+    .stocks li {
+        flex: 1 1 auto;
+    }
+}
