@@ -11,13 +11,13 @@ export default function decorate(block) {
     while (row.firstElementChild) li.append(row.firstElementChild);
     [...li.children].forEach((div) => {
       div.className = 'stock-id';
-      fetchStockPrice(div.textContent).then(data => {
+      fetchStockPrice(div.textContent).then((data) => {
         const priceDiv = document.createElement('div');
         priceDiv.className = 'stock-price';
-        if (data[0].dailyGain) li.classList.add('daily-gain')
+        if (data[0].dailyGain) li.classList.add('daily-gain');
         priceDiv.append(data[0].price);
         li.append(priceDiv);
-      });;
+      });
     });
     ul.append(li);
   });
