@@ -2,27 +2,47 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 16px;
 }
 
 .stocks li {
   padding: var(--spacing-s);
-  margin: var(--spacing-xs);
   border-radius: var(--card-border-radius-l);
   filter: var(--image-filter-drop-shadow-small);
   border: solid 1px var( --text-color);
-  
+  background: rgb(249, 101, 101);
+}
+
+.stocks .stock-id {
+    position: relative;
+    display: inline-block;
+}
+
+.stocks .stock-id::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0.5em;
+    right: -15px;
+    transform: rotate(135deg);
+    width: 6px;
+    height: 6px;
+    border: 2px solid currentcolor;
+    border-radius: 0 1px 0 0;
+    border-width: 2px 2px 0 0;
+}
+
+.stocks li.daily-gain .stock-id::after {
+    transform: rotate(-45deg);
+    top: 0.6em;
+}
+
+.stocks .daily-gain {
+    background: rgb(108, 172, 108);
 }
 
 .stocks .stock-id {
     font-weight: 800;
-}
-
-@media (width >= 600px) {
-    .stocks ul {
-        display: flex;
-    }
-
-    .stocks li {
-        flex: 1 1 auto;
-    }
 }
