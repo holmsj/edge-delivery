@@ -23,6 +23,11 @@
   display: block;
 }
 
+.columns.borders > div > div {
+  padding: 12px;
+  margin-bottom: 32px;
+}
+
 @media (width >= 900px) {
   .columns > div {
     align-items: center;
@@ -33,11 +38,6 @@
 
   .columns.borders > div {
     gap: 16px;
-  }
-
-  .columns.borders > div > div {
-    padding: 12px;
-    margin-bottom: 32px;
   }
 
   .columns > div > div {
