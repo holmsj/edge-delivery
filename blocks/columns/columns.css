@@ -11,6 +11,10 @@
   order: 1;
 }
 
+.columns.borders > div > div {
+  border: 1px solid var(--text-color);
+}
+
 .columns > div > .columns-img-col {
   order: 0;
 }
@@ -24,6 +28,16 @@
     align-items: center;
     flex-direction: unset;
     gap: 32px;
+    align-items: stretch;
+  }
+
+  .columns.borders > div {
+    gap: 16px;
+  }
+
+  .columns.borders > div > div {
+    padding: 12px;
+    margin-bottom: 32px;
   }
 
   .columns > div > div {

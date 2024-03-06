@@ -7,6 +7,13 @@
       "passConfig": true,
       "environments": ["preview","live", "edit"],
       "includePaths": ["**.docx**"]
+    },
+    {
+      "id": "library",
+      "title": "Library",
+      "environments": ["edit"],
+      "url": "/tools/sidekick/library.html",
+      "includePaths": ["**.docx**"]
     }
   ]
 }
